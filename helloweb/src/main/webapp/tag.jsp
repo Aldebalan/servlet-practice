@@ -16,7 +16,7 @@
 	
 	<table border="1" cellspacing="0" cellpadding="5">
 		<tr>
-			<th>글번호</th>
+			<th>dlads</th>
 			<th>글제목</th>
 			<th>작성자</th>
 		</tr>
