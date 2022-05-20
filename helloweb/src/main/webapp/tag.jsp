@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,18 +7,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Hello World1</h1>
-	<h2>Hello World2</h2>
-	<h3>Hello World3</h3>
-	<h4>Hello World4</h4>
-	<h5>Hello World5</h5>
-	<h6>Hello World6</h6>
-
-	<table border="1" cellspacing="0" bordercolor="red">
+	<h1>Hello World</h1>
+	<h2>Hello World</h2>
+	<h3>Hello World</h3>
+	<h4>Hello World</h4>
+	<h5>Hello World</h5>
+	<h6>Hello World</h6>
+	
+	<table border="1" cellspacing="0" cellpadding="5">
 		<tr>
-			<td>글 번호</td>
-			<td>글 제목</td>
-			<td>작성자</td>
+			<th>글번호</th>
+			<th>글제목</th>
+			<th>작성자</th>
 		</tr>
 		<tr>
 			<td>2</td>
@@ -31,20 +31,18 @@
 			<td>마이콜</td>
 		</tr>
 	</table>
-	<br />
-	<img src='http://localhost:8080/helloweb/assets/images/cat.jpg'
-		style="width: 150px" />
-	<img src='/helloweb/assets/images/cat.jpg' style="width: 150px" />
-	<img src='assets/images/cat.jpg' style="width: 150px" />
-	<br />
+	<br/>
+	<img src="http://localhost:8080/helloweb/assets/images/luffy.jpg" style="width:120px"/>
+	<img src="/helloweb/assets/images/luffy.jpg" style="width:120px"/>
+	<img src="assets/images/luffy.jpg" style="width:120px"/>
 	<p>
-		문장 p태그 실험1 <br />
-		문장 p태그 실험2 <br />
-		문장 p태그 실험3 <br />
+		문장1 입니다.~~~<br/>
+		문장2 입니다.~~~<br/>
+		문장3 입니다.~~~<br/>
 	</p>
-	<a href="/helloweb/hello">hello로 가기</a>
-	<br />
+	<br/>
+	<a href="/helloweb/hello?name=안대혁">hello로 가기</a>
+	<br/>
 	<a href="form.jsp">폼으로 가기</a>
-
 </body>
 </html>
