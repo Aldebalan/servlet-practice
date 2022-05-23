@@ -32,9 +32,9 @@
 		</tr>
 	</table>
 	<br/>
-	<img src="http://localhost:8080/helloweb/assets/images/luffy.jpg" style="width:120px"/>
-	<img src="/helloweb/assets/images/luffy.jpg" style="width:120px"/>
-	<img src="assets/images/luffy.jpg" style="width:120px"/>
+	<img src="http://localhost:8080/helloweb/assets/images/cat.jpg" style="width:120px"/>
+	<img src="/helloweb/assets/images/cat.jpg" style="width:120px"/>
+	<img src="assets/images/cat.jpg" style="width:120px"/>
 	<p>
 		문장1 입니다.~~~<br/>
 		문장2 입니다.~~~<br/>
