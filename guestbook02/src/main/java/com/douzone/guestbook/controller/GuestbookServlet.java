@@ -19,7 +19,7 @@ public class GuestbookServlet extends HttpServlet {
 			throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 
-		System.out.println("OK");
+//		System.out.println("OK");
 
 		String action = request.getParameter("a");
 		if ("deleteform".equals(action)) {
