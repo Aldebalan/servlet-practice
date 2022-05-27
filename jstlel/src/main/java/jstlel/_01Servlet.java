@@ -21,8 +21,9 @@ public class _01Servlet extends HttpServlet {
 	String sVal = "가나다";
 	
 	// 객체
-	UserVo vo = new UserVo();
+	Object obj = null;
 	
+	UserVo vo = new UserVo();
 	vo.setNo(10L);
 	vo.setName("둘리");
 	
@@ -41,7 +42,7 @@ public class _01Servlet extends HttpServlet {
 	request.setAttribute("bVal", bVal);
 	request.setAttribute("sVal", sVal);
 	
-	Object obj = null;
+	
 	request.setAttribute("obj", obj);
 	request.setAttribute("user", vo);
 	
@@ -51,8 +52,6 @@ public class _01Servlet extends HttpServlet {
 		.getRequestDispatcher("/WEB-INF/views/01.jsp")
 		.forward(request, response);
 	
-	
-		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

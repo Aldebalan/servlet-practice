@@ -46,8 +46,8 @@
 	${iVal == 10 or lVal < 10 }<br/>
 	
 	<h4>요청 파라미터</h4>
-	${Param.a + 10 }<br/>
-	${Param.email }<br/> <!-- 왜 안됨? -->
+	${param.a + 10 }<br/>
+	${param.email }<br/>
 	
 </body>
 </html>
