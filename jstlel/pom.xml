@@ -7,7 +7,7 @@
 	</parent>
 	<artifactId>jstlel</artifactId>
 	<packaging>war</packaging>
-	
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
@@ -28,16 +28,22 @@
 				<artifactId>tomcat-maven-plugin</artifactId>
 				<version>1.1</version>
 				<configuration>
-				<url>http://192.168.10.31:8080/manager/text</url>
-				<path>/helloweb</path>
-				<username>admin</username>
-				<password>manager</password>
+					<url>http://192.168.10.31:8080/manager/text</url>
+					<path>/helloweb</path>
+					<username>admin</username>
+					<password>manager</password>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
 
 	<dependencies>
+		<!-- JSTL-->
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
 		<!-- Servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
