@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.douzone.guestbook.dao.GuestBookDao;
-import com.douzone.guestbook.vo.GuestBookVo;
+import com.douzone.guestbook.dao.GuestbookDao;
+import com.douzone.guestbook.vo.GuestbookVo;
 
 public class GuestbookServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -24,7 +24,7 @@ public class GuestbookServlet extends HttpServlet {
 
 		String action = request.getParameter("a");
 		if ("deleteform".equals(action)) {
-			List<GuestBookVo> list = new GuestBookDao().findAll();
+			List<GuestbookVo> list = new GuestbookDao().findAll();
 
 			request.setAttribute("list", list);
 
@@ -37,12 +37,12 @@ public class GuestbookServlet extends HttpServlet {
 			String password = request.getParameter("password");
 			String message = request.getParameter("message");
 
-			GuestBookVo vo = new GuestBookVo();
+			GuestbookVo vo = new GuestbookVo();
 			vo.setName(name);
 			vo.setPassword(password);
 			vo.setMessage(message);
 
-			new GuestBookDao().insert(vo);
+			new GuestbookDao().insert(vo);
 			
 			response.sendRedirect(request.getContextPath() + "/gb");
 			
@@ -52,16 +52,16 @@ public class GuestbookServlet extends HttpServlet {
 			Long no = Long.parseLong(request.getParameter("no"));
 			String password = request.getParameter("password");
 			
-			GuestBookVo vo = new GuestBookVo();
+			GuestbookVo vo = new GuestbookVo();
 			vo.setNo(no);
 			vo.setPassword(password);
 			
-			new GuestBookDao().delete(vo);
+			new GuestbookDao().delete(vo);
 			
 			response.sendRedirect(request.getContextPath() + "/gb");
 		} else {
 		
-		List<GuestBookVo> list = new GuestBookDao().findAll();
+		List<GuestbookVo> list = new GuestbookDao().findAll();
 
 		request.setAttribute("list", list);
 

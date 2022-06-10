@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.List"%>
-<%@page import="com.douzone.guestbook.dao.GuestBookDao"%>
-<%@page import="com.douzone.guestbook.vo.GuestBookVo"%>
+<%@page import="com.douzone.guestbook.dao.GuestbookDao"%>
+<%@page import="com.douzone.guestbook.vo.GuestbookVo"%>
 <%
-List<GuestBookVo> list = (List<GuestBookVo>) request.getAttribute("list");
+List<GuestbookVo> list = (List<GuestbookVo>) request.getAttribute("list");
 int index = list.size();
 %>
 
@@ -33,7 +33,7 @@ int index = list.size();
 	<br>
 
 	<%
-	for (GuestBookVo vo : list) {
+	for (GuestbookVo vo : list) {
 	%>
 	<table width=510 border=1>
 		<tr>

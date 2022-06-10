@@ -2,8 +2,8 @@ package com.douzone.guestbook.dao.test;
 
 import java.util.List;
 
-import com.douzone.guestbook.dao.GuestBookDao;
-import com.douzone.guestbook.vo.GuestBookVo;
+import com.douzone.guestbook.dao.GuestbookDao;
+import com.douzone.guestbook.vo.GuestbookVo;
 
 public class GuestBookDaoTest {
 
@@ -13,17 +13,17 @@ public class GuestBookDaoTest {
 	}
 
 	private static void testInsert() {
-		GuestBookVo vo = new GuestBookVo();
+		GuestbookVo vo = new GuestbookVo();
 		vo.setPassword("1234");
 		vo.setMessage("to complete");
 		vo.setRegDate("2022-05-23");
 
-		new GuestBookDao().insert(vo);
+		new GuestbookDao().insert(vo);
 	}
 
 	private static void testFindAll() {
-		List<GuestBookVo> list = new GuestBookDao().findAll();
-		for(GuestBookVo vo : list) {
+		List<GuestbookVo> list = new GuestbookDao().findAll();
+		for(GuestbookVo vo : list) {
 			System.out.println(vo);
 		}
 	}

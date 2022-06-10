@@ -7,11 +7,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import com.douzone.guestbook.vo.GuestBookVo;
+import com.douzone.guestbook.vo.GuestbookVo;
 
-public class GuestBookDao {
+public class GuestbookDao {
 
-	public boolean insert(GuestBookVo vo) {
+	public boolean insert(GuestbookVo vo) {
 		boolean result = false;
 		Connection connection = null;
 		PreparedStatement pstmt = null;
@@ -49,7 +49,7 @@ public class GuestBookDao {
 	}
 	
 	
-	public boolean delete(GuestBookVo vo) {
+	public boolean delete(GuestbookVo vo) {
 		boolean result = false;
 		Connection connection = null;
 		PreparedStatement pstmt = null;
@@ -87,8 +87,8 @@ public class GuestBookDao {
 	}
 	
 	
-	public List<GuestBookVo> findAll() {
-		List<GuestBookVo> result = new ArrayList<>();
+	public List<GuestbookVo> findAll() {
+		List<GuestbookVo> result = new ArrayList<>();
 		Connection connection = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -110,7 +110,7 @@ public class GuestBookDao {
 				String reg_Date = rs.getString(3);
 				String message = rs.getString(4);
 				
-				GuestBookVo vo = new GuestBookVo();
+				GuestbookVo vo = new GuestbookVo();
 				vo.setNo(no);
 				vo.setName(name);
 				vo.setRegDate(reg_Date);
